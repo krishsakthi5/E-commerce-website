@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registration Form</title>
+
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+		
+<div class="ScriptTop">
+    <div class="rt-container">
+        <div class="col-rt-4" id="float-right">
+            
+        </div>
+        <div class="col-rt-2">
+            <ul>
+                <li><a href="login/login.html">Already Hava an Account?</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>Sign Up</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+               
+               <div class="form-container">
+                <form name="registerForm">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Enter Your FirstName" required/><p class="error-message"></p>
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" placeholder="Enter Your LastName" required/>
+                  <p class="error-message"></p>
+                  <label for="e-mail">E-mail address *</label>
+                  <input type="text" id="e-mail" placeholder="Enter valid Mail id" required/>
+                  <p class="error-message"></p>
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" id="phoneNumber" maxlength="9" pattern=".{9,}"   required title="9 characters length"placeholder="phone Number"/>
+                  <p class="error-message"></p>
+                  <label for="country">Country</label>
+                  <input type="text" id="country" placeholder="Country"/>
+                  <p class="error-message"></p>
+                  <label for="password">Password *</label>
+                  <input type="password" id="password" pattern=".{8,}"   required title="8 characters minimum"/>
+                  <p class="error-message"></p>
+                  <p class="password-rules">Your password should contain at least 8 characters and 1 number.</p>
+                    <input class="button" type="submit" value="submit" name="submit" onClick="formValidation()" />
+                 </form>
+                 </div>
+              </div>
+  
+		</div>
+    </div>
+</section>
+     
+	
+
+	</body>
+</html>
